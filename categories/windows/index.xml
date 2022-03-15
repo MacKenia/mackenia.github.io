@@ -1,5 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>windows on Mackenia 的小站</title><link>https://mackenia.github.io/categories/windows/</link><description>Recent content in windows on Mackenia 的小站</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 15 Mar 2022 12:04:52 +0800</lastBuildDate><atom:link href="https://mackenia.github.io/categories/windows/index.xml" rel="self" type="application/rss+xml"/><item><title>Windows下使用包管理器快速初始化编程环境</title><link>https://mackenia.github.io/p/windows%E4%B8%8B%E4%BD%BF%E7%94%A8%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8%E5%BF%AB%E9%80%9F%E5%88%9D%E5%A7%8B%E5%8C%96%E7%BC%96%E7%A8%8B%E7%8E%AF%E5%A2%83/</link><pubDate>Tue, 15 Mar 2022 12:04:52 +0800</pubDate><guid>https://mackenia.github.io/p/windows%E4%B8%8B%E4%BD%BF%E7%94%A8%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8%E5%BF%AB%E9%80%9F%E5%88%9D%E5%A7%8B%E5%8C%96%E7%BC%96%E7%A8%8B%E7%8E%AF%E5%A2%83/</guid><description>windows下使用包管理器快速初始化编程环境 支持 win7 及以上的 windows 系统, 将会用到开源第三方包管理器 scoop, 需要PowerShell 5.x以上以及.Net Framework 4.5及以上, 所有的文件都将安装到 C:\Users\Username\scoop\apps目录下
-安装 Scoop 打开 PowerShell
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>windows on Mackenia 的小站</title>
+    <link>https://mackenia.github.io/categories/windows/</link>
+    <description>Recent content in windows on Mackenia 的小站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 15 Mar 2022 12:04:52 +0800</lastBuildDate><atom:link href="https://mackenia.github.io/categories/windows/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows下使用包管理器快速初始化编程环境</title>
+      <link>https://mackenia.github.io/p/windows%E4%B8%8B%E4%BD%BF%E7%94%A8%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8%E5%BF%AB%E9%80%9F%E5%88%9D%E5%A7%8B%E5%8C%96%E7%BC%96%E7%A8%8B%E7%8E%AF%E5%A2%83/</link>
+      <pubDate>Tue, 15 Mar 2022 12:04:52 +0800</pubDate>
+      
+      <guid>https://mackenia.github.io/p/windows%E4%B8%8B%E4%BD%BF%E7%94%A8%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8%E5%BF%AB%E9%80%9F%E5%88%9D%E5%A7%8B%E5%8C%96%E7%BC%96%E7%A8%8B%E7%8E%AF%E5%A2%83/</guid>
+      <description>windows下使用包管理器快速初始化编程环境  支持 win7 及以上的 windows 系统, 将会用到开源第三方包管理器 scoop, 需要PowerShell 5.x以上以及.Net Framework 4.5及以上, 所有的文件都将安装到 C:\Users\Username\scoop\apps目录下
+ 安装 Scoop 打开 PowerShell
 运行以下命令:
-1 2 Set-ExecutionPolicy RemoteSigned -scope CurrentUser iwr -useb get.scoop.sh | iex 输出以下内容
-1 2 3 4 5 6 7 PS C:\Users\WDAGUtilityAccount&amp;gt; Set-ExecutionPolicy RemoteSigned -scope CurrentUser Execution Policy Change The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at https:/go.</description></item></channel></rss>
+1 2  Set-ExecutionPolicy RemoteSigned -scope CurrentUser iwr -useb get.scoop.sh | iex   输出以下内容
+1 2 3 4 5 6 7  PS C:\Users\WDAGUtilityAccount&amp;gt; Set-ExecutionPolicy RemoteSigned -scope CurrentUser Execution Policy Change The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at https:/go.</description>
+    </item>
+    
+  </channel>
+</rss>

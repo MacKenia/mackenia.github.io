@@ -1,1 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mackenia's blog</title><link>https://mackenia.github.io/en/</link><description>Recent content on Mackenia's blog</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><atom:link href="https://mackenia.github.io/en/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Mackenia&#39;s blog</title>
+        <link>https://mackenia.github.io/en/</link>
+        <description>Recent content on Mackenia&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-CN</language><atom:link href="https://mackenia.github.io/en/index.xml" rel="self" type="application/rss+xml" />
+    </channel>
+</rss>
