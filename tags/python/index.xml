@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on Mackenia 的小站</title>
+    <link>https://mackenia.github.io/tags/python/</link>
+    <description>Recent content in python on Mackenia 的小站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 11 Mar 2022 12:49:48 +0800</lastBuildDate><atom:link href="https://mackenia.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Spider</title>
+      <link>https://mackenia.github.io/p/spider/</link>
+      <pubDate>Fri, 11 Mar 2022 12:49:48 +0800</pubDate>
+      
+      <guid>https://mackenia.github.io/p/spider/</guid>
+      <description>使用python爬取图片api中的图片 1 2 3 4 5 6 7 8 9  import requests #导入requests库 for i in range(100): # 爬取100张 print(f&amp;#34;正在爬取第{i+1}张图片&amp;#34;) with open(f&amp;#34;{i:0&amp;gt;2d}.jgp&amp;#34;, &amp;#34;wb&amp;#34;) as f: # 打开文件 r = requests.get(&amp;#34;https://imgapi.xl0408.top/index.php&amp;#34;) # 获取图片 f.write(r.content) # 写入内容 f.close() ``   </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,4 +1,231 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mackenia 的小站</title><link>https://mackenia.xyz/</link><description>Recent content on Mackenia 的小站</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://mackenia.xyz/index.xml" rel="self" type="application/rss+xml"/><item><title>Chinese Test</title><link>https://mackenia.xyz/p/test-chinese/</link><pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate><guid>https://mackenia.xyz/p/test-chinese/</guid><description>&lt;img src="https://mackenia.xyz/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg" alt="Featured image of post Chinese Test" />&lt;h2 id="正文测试">正文测试&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mackenia 的小站</title><link>https://mackenia.github.io/</link><description>Recent content on Mackenia 的小站</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 15 Mar 2022 12:04:52 +0800</lastBuildDate><atom:link href="https://mackenia.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Windows下使用包管理器快速初始化编程环境</title><link>https://mackenia.github.io/p/windows%E4%B8%8B%E4%BD%BF%E7%94%A8%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8%E5%BF%AB%E9%80%9F%E5%88%9D%E5%A7%8B%E5%8C%96%E7%BC%96%E7%A8%8B%E7%8E%AF%E5%A2%83/</link><pubDate>Tue, 15 Mar 2022 12:04:52 +0800</pubDate><guid>https://mackenia.github.io/p/windows%E4%B8%8B%E4%BD%BF%E7%94%A8%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8%E5%BF%AB%E9%80%9F%E5%88%9D%E5%A7%8B%E5%8C%96%E7%BC%96%E7%A8%8B%E7%8E%AF%E5%A2%83/</guid><description>&lt;img src="https://api.vvhan.com/api/acgimg" alt="Featured image of post Windows下使用包管理器快速初始化编程环境" />&lt;h1 id="windows下使用包管理器快速初始化编程环境">windows下使用包管理器快速初始化编程环境&lt;/h1>
+&lt;blockquote>
+&lt;p>支持 &lt;code>win7&lt;/code> 及以上的 &lt;code>windows&lt;/code> 系统,
+将会用到开源第三方包管理器 &lt;em>&lt;a class="link" href="https://scoop.sh/" target="_blank" rel="noopener"
+>&lt;code>scoop&lt;/code>&lt;/a>&lt;/em>,
+需要&lt;code>PowerShell 5.x&lt;/code>以上以及&lt;code>.Net Framework 4.5&lt;/code>及以上,
+所有的文件都将安装到 &lt;code>C:\Users\Username\scoop\apps&lt;/code>目录下&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="安装-scoop">安装 &lt;code>Scoop&lt;/code>&lt;/h2>
+&lt;p>打开 &lt;code>PowerShell&lt;/code>&lt;/p>
+&lt;p>运行以下命令:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-ps1" data-lang="ps1">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">Set-ExecutionPolicy&lt;/span> &lt;span class="n">RemoteSigned&lt;/span> &lt;span class="n">-scope&lt;/span> &lt;span class="n">CurrentUser&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">iwr &lt;/span>&lt;span class="n">-useb&lt;/span> &lt;span class="n">get&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">scoop&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">sh&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="nb">iex
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>输出以下内容&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-ps1" data-lang="ps1">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">PS &lt;/span>&lt;span class="n">C:&lt;/span>&lt;span class="p">\&lt;/span>&lt;span class="n">Users&lt;/span>&lt;span class="p">\&lt;/span>&lt;span class="n">WDAGUtilityAccount&lt;/span>&lt;span class="p">&amp;gt;&lt;/span> &lt;span class="nb">Set-ExecutionPolicy&lt;/span> &lt;span class="n">RemoteSigned&lt;/span> &lt;span class="n">-scope&lt;/span> &lt;span class="n">CurrentUser&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">Execution&lt;/span> &lt;span class="n">Policy&lt;/span> &lt;span class="n">Change&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">The&lt;/span> &lt;span class="n">execution&lt;/span> &lt;span class="n">policy&lt;/span> &lt;span class="n">helps&lt;/span> &lt;span class="n">protect&lt;/span> &lt;span class="n">you&lt;/span> &lt;span class="n">from&lt;/span> &lt;span class="n">scripts&lt;/span> &lt;span class="n">that&lt;/span> &lt;span class="n">you&lt;/span> &lt;span class="k">do&lt;/span> &lt;span class="n">not&lt;/span> &lt;span class="n">trust&lt;/span>&lt;span class="p">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">Changing&lt;/span> &lt;span class="n">the&lt;/span> &lt;span class="n">execution&lt;/span> &lt;span class="n">policy&lt;/span> &lt;span class="n">might&lt;/span> &lt;span class="n">expose&lt;/span> &lt;span class="n">you&lt;/span> &lt;span class="n">to&lt;/span> &lt;span class="n">the&lt;/span> &lt;span class="n">security&lt;/span> &lt;span class="n">risks&lt;/span> &lt;span class="n">described&lt;/span> &lt;span class="k">in&lt;/span> &lt;span class="n">the&lt;/span> &lt;span class="n">about_Execution_Policies&lt;/span> &lt;span class="n">help&lt;/span> &lt;span class="n">topic&lt;/span> &lt;span class="n">at&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">https&lt;/span>&lt;span class="err">:&lt;/span>&lt;span class="p">/&lt;/span>&lt;span class="n">go&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">microsoft&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">com&lt;/span>&lt;span class="p">/&lt;/span>&lt;span class="n">fwlink&lt;/span>&lt;span class="p">/&lt;/span>&lt;span class="k">?&lt;/span>&lt;span class="n">LinkID&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="n">135170&lt;/span>&lt;span class="p">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">Do&lt;/span> &lt;span class="n">you&lt;/span> &lt;span class="n">want&lt;/span> &lt;span class="n">to&lt;/span> &lt;span class="n">change&lt;/span> &lt;span class="n">the&lt;/span> &lt;span class="n">execution&lt;/span> &lt;span class="n">policy&lt;/span>&lt;span class="p">?&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="no">[Y] Yes [A] Yes to All [N] No [L] No to All [S]&lt;/span> &lt;span class="n">Suspend&lt;/span> &lt;span class="p">[?]&lt;/span> &lt;span class="n">Help&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="k">default&lt;/span> &lt;span class="n">is&lt;/span> &lt;span class="s2">&amp;#34;N&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="err">:&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>输入 &lt;code>A&lt;/code> 后回车, 等待安装完成&lt;/p>
+&lt;p>运行:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-ps1" data-lang="ps1">&lt;span class="line">&lt;span class="cl">&lt;span class="n">scoop&lt;/span> &lt;span class="n">help&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>如果输入以下内容则安装成功:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-ps1" data-lang="ps1">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">PS &lt;/span>&lt;span class="n">C:&lt;/span>&lt;span class="p">\&lt;/span>&lt;span class="n">User&lt;/span>&lt;span class="p">\&lt;/span>&lt;span class="n">WDAGUtilityAccount&lt;/span>&lt;span class="p">&amp;gt;&lt;/span> &lt;span class="n">scoop&lt;/span> &lt;span class="n">help&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">Usage&lt;/span>&lt;span class="err">:&lt;/span> &lt;span class="n">scoop&lt;/span> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">command&lt;/span>&lt;span class="p">&amp;gt;&lt;/span> &lt;span class="p">[&amp;lt;&lt;/span>&lt;span class="n">args&lt;/span>&lt;span class="p">&amp;gt;]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">Some&lt;/span> &lt;span class="n">useful&lt;/span> &lt;span class="n">commands&lt;/span> &lt;span class="n">are&lt;/span>&lt;span class="err">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">alias&lt;/span> &lt;span class="n">Manage&lt;/span> &lt;span class="n">scoop&lt;/span> &lt;span class="n">aliases&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">bucket&lt;/span> &lt;span class="n">Manage&lt;/span> &lt;span class="n">Scoop&lt;/span> &lt;span class="n">buckets&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">cache&lt;/span> &lt;span class="n">Show&lt;/span> &lt;span class="n">or&lt;/span> &lt;span class="nb">clear &lt;/span>&lt;span class="n">the&lt;/span> &lt;span class="n">download&lt;/span> &lt;span class="n">cache&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cat &lt;/span> &lt;span class="n">Show&lt;/span> &lt;span class="n">content&lt;/span> &lt;span class="n">of&lt;/span> &lt;span class="n">specified&lt;/span> &lt;span class="n">manifest&lt;/span>&lt;span class="p">.&lt;/span> &lt;span class="k">If&lt;/span> &lt;span class="n">available&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">`&lt;/span>&lt;span class="n">bat&lt;/span>&lt;span class="p">`&lt;/span> &lt;span class="n">will&lt;/span> &lt;span class="n">be&lt;/span> &lt;span class="n">used&lt;/span> &lt;span class="n">to&lt;/span> &lt;span class="nb">pretty-print&lt;/span> &lt;span class="n">the&lt;/span> &lt;span class="n">JSON&lt;/span>&lt;span class="p">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">checkup&lt;/span> &lt;span class="n">Check&lt;/span> &lt;span class="k">for&lt;/span> &lt;span class="n">potential&lt;/span> &lt;span class="n">problems&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">cleanup&lt;/span> &lt;span class="n">Cleanup&lt;/span> &lt;span class="n">apps&lt;/span> &lt;span class="n">by&lt;/span> &lt;span class="n">removing&lt;/span> &lt;span class="n">old&lt;/span> &lt;span class="n">versions&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">config&lt;/span> &lt;span class="n">Get&lt;/span> &lt;span class="n">or&lt;/span> &lt;span class="nb">set &lt;/span>&lt;span class="n">configuration&lt;/span> &lt;span class="n">values&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">create&lt;/span> &lt;span class="n">Create&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="n">custom&lt;/span> &lt;span class="n">app&lt;/span> &lt;span class="n">manifest&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">depends&lt;/span> &lt;span class="n">List&lt;/span> &lt;span class="n">dependencies&lt;/span> &lt;span class="k">for&lt;/span> &lt;span class="n">an&lt;/span> &lt;span class="n">app&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">download&lt;/span> &lt;span class="n">Download&lt;/span> &lt;span class="n">apps&lt;/span> &lt;span class="k">in&lt;/span> &lt;span class="n">the&lt;/span> &lt;span class="n">cache&lt;/span> &lt;span class="n">folder&lt;/span> &lt;span class="n">and&lt;/span> &lt;span class="n">verify&lt;/span> &lt;span class="n">hashes&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">export&lt;/span> &lt;span class="n">Exports&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">an&lt;/span> &lt;span class="n">importable&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="n">list&lt;/span> &lt;span class="n">of&lt;/span> &lt;span class="n">installed&lt;/span> &lt;span class="n">apps&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">help&lt;/span> &lt;span class="n">Show&lt;/span> &lt;span class="n">help&lt;/span> &lt;span class="k">for&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="n">command&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">hold&lt;/span> &lt;span class="n">Hold&lt;/span> &lt;span class="n">an&lt;/span> &lt;span class="n">app&lt;/span> &lt;span class="n">to&lt;/span> &lt;span class="n">disable&lt;/span> &lt;span class="n">updates&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">home&lt;/span> &lt;span class="n">Opens&lt;/span> &lt;span class="n">the&lt;/span> &lt;span class="n">app&lt;/span> &lt;span class="n">homepage&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">info&lt;/span> &lt;span class="n">Display&lt;/span> &lt;span class="n">information&lt;/span> &lt;span class="n">about&lt;/span> &lt;span class="n">an&lt;/span> &lt;span class="n">app&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">install&lt;/span> &lt;span class="n">Install&lt;/span> &lt;span class="n">apps&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">list&lt;/span> &lt;span class="n">List&lt;/span> &lt;span class="n">installed&lt;/span> &lt;span class="n">apps&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">prefix&lt;/span> &lt;span class="n">Returns&lt;/span> &lt;span class="n">the&lt;/span> &lt;span class="n">path&lt;/span> &lt;span class="n">to&lt;/span> &lt;span class="n">the&lt;/span> &lt;span class="n">specified&lt;/span> &lt;span class="n">app&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">reset&lt;/span> &lt;span class="n">Reset&lt;/span> &lt;span class="n">an&lt;/span> &lt;span class="n">app&lt;/span> &lt;span class="n">to&lt;/span> &lt;span class="n">resolve&lt;/span> &lt;span class="n">conflicts&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">search&lt;/span> &lt;span class="n">Search&lt;/span> &lt;span class="n">available&lt;/span> &lt;span class="n">apps&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">shim&lt;/span> &lt;span class="n">Manipulate&lt;/span> &lt;span class="n">Scoop&lt;/span> &lt;span class="n">shims&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">status&lt;/span> &lt;span class="n">Show&lt;/span> &lt;span class="n">status&lt;/span> &lt;span class="n">and&lt;/span> &lt;span class="n">check&lt;/span> &lt;span class="k">for&lt;/span> &lt;span class="n">new&lt;/span> &lt;span class="n">app&lt;/span> &lt;span class="n">versions&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">unhold&lt;/span> &lt;span class="n">Unhold&lt;/span> &lt;span class="n">an&lt;/span> &lt;span class="n">app&lt;/span> &lt;span class="n">to&lt;/span> &lt;span class="n">enable&lt;/span> &lt;span class="n">updates&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">uninstall&lt;/span> &lt;span class="n">Uninstall&lt;/span> &lt;span class="n">an&lt;/span> &lt;span class="n">app&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">update&lt;/span> &lt;span class="n">Update&lt;/span> &lt;span class="n">apps&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">or&lt;/span> &lt;span class="n">Scoop&lt;/span> &lt;span class="n">itself&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">virustotal&lt;/span> &lt;span class="n">Look&lt;/span> &lt;span class="k">for&lt;/span> &lt;span class="n">app&lt;/span>&lt;span class="s1">&amp;#39;s hash on virustotal.com
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s1">which Locate a shim/executable (similar to &amp;#39;&lt;/span>&lt;span class="n">which&lt;/span>&lt;span class="s1">&amp;#39; on Linux)
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s1">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s1">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s1">Type &amp;#39;&lt;/span>&lt;span class="n">scoop&lt;/span> &lt;span class="n">help&lt;/span> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">command&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>&lt;span class="err">&amp;#39;&lt;/span> &lt;span class="n">to&lt;/span> &lt;span class="n">get&lt;/span> &lt;span class="n">help&lt;/span> &lt;span class="k">for&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="n">specific&lt;/span> &lt;span class="n">command&lt;/span>&lt;span class="p">.&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>安装依赖 &lt;code>git&lt;/code> &lt;code>7-zip&lt;/code> 版本控制器和解压工具&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-ps1" data-lang="ps1">&lt;span class="line">&lt;span class="cl">&lt;span class="n">scoop&lt;/span> &lt;span class="n">install&lt;/span> &lt;span class="n">git&lt;/span> &lt;span class="n">7-zip&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="安装编程所需的环境">安装编程所需的环境&lt;/h2>
+&lt;h3 id="安装-c-环境">安装 &lt;code>C++&lt;/code> 环境&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-ps1" data-lang="ps1">&lt;span class="line">&lt;span class="cl">&lt;span class="n">scoop&lt;/span> &lt;span class="n">install&lt;/span> &lt;span class="nb">mingw-winlibs&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="检查gcc版本">检查&lt;code>gcc&lt;/code>版本&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-ps1" data-lang="ps1">&lt;span class="line">&lt;span class="cl">&lt;span class="n">gcc&lt;/span> &lt;span class="n">-v&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="安装-python-环境">安装 &lt;code>Python&lt;/code> 环境&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-ps1" data-lang="ps1">&lt;span class="line">&lt;span class="cl">&lt;span class="n">scoop&lt;/span> &lt;span class="n">install&lt;/span> &lt;span class="n">python&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="检查python版本">检查&lt;code>Python&lt;/code>版本&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-ps1" data-lang="ps1">&lt;span class="line">&lt;span class="cl">&lt;span class="n">python&lt;/span> &lt;span class="n">-V&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="安装-java17-环境">安装 &lt;code>Java17&lt;/code> 环境&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-ps1" data-lang="ps1">&lt;span class="line">&lt;span class="cl">&lt;span class="n">scoop&lt;/span> &lt;span class="n">bucket&lt;/span> &lt;span class="n">add&lt;/span> &lt;span class="n">java&lt;/span> &lt;span class="c"># 添加java的bucket&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">scoop&lt;/span> &lt;span class="n">install&lt;/span> &lt;span class="n">java&lt;/span>&lt;span class="p">/&lt;/span>&lt;span class="n">openjdk17&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="检查java版本">检查&lt;code>Java&lt;/code>版本&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-ps1" data-lang="ps1">&lt;span class="line">&lt;span class="cl">&lt;span class="n">java&lt;/span> &lt;span class="p">-&lt;/span>&lt;span class="n">-version&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>java仍需自己手动配置&lt;code>JAVA_HOME&lt;/code>&lt;/p>
+&lt;blockquote>
+&lt;p>如果有其它&lt;code>Java&lt;/code>版本需求可以在添加&lt;code>bucket&lt;/code>之后
+使用 &lt;code>scoop search openjdk&lt;/code> 检索自己需要的版本之后安装&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="错误解决">错误解决&lt;/h2>
+&lt;h3 id="无法以administrator运行">无法以&lt;code>administrator&lt;/code>运行&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-ps1" data-lang="ps1">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">PS &lt;/span>&lt;span class="n">C:&lt;/span>&lt;span class="p">\&lt;/span>&lt;span class="n">Users&lt;/span>&lt;span class="p">\&lt;/span>&lt;span class="n">WDAGUtilityAccount&lt;/span>&lt;span class="p">&amp;gt;&lt;/span> &lt;span class="nb">iwr &lt;/span>&lt;span class="n">-useb&lt;/span> &lt;span class="n">get&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">scoop&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">sh&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="nb">iex &lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">Initializing&lt;/span>&lt;span class="p">..&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">Running&lt;/span> &lt;span class="n">the&lt;/span> &lt;span class="n">installer&lt;/span> &lt;span class="n">as&lt;/span> &lt;span class="n">administrator&lt;/span> &lt;span class="n">is&lt;/span> &lt;span class="n">disabled&lt;/span> &lt;span class="n">by&lt;/span> &lt;span class="k">default&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">see&lt;/span> &lt;span class="n">https&lt;/span>&lt;span class="err">:&lt;/span>&lt;span class="p">//&lt;/span>&lt;span class="n">github&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">com&lt;/span>&lt;span class="p">/&lt;/span>&lt;span class="n">ScoopInstaller&lt;/span>&lt;span class="p">/&lt;/span>&lt;span class="n">Install&lt;/span>&lt;span class="c">#for-admin for details. &lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">Abort&lt;/span>&lt;span class="p">.&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>更换安装命令:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-ps1" data-lang="ps1">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">iwr &lt;/span>&lt;span class="n">-useb&lt;/span> &lt;span class="n">get&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">scoop&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">sh&lt;/span> &lt;span class="n">-outfile&lt;/span> &lt;span class="s1">&amp;#39;install.ps1&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">.\&lt;/span>&lt;span class="n">install&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">ps1&lt;/span> &lt;span class="n">-RunAsAdmin&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Chinese Test</title><link>https://mackenia.github.io/p/test-chinese/</link><pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate><guid>https://mackenia.github.io/p/test-chinese/</guid><description>&lt;img src="https://mackenia.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg" alt="Featured image of post Chinese Test" />&lt;h2 id="正文测试">正文测试&lt;/h2>
 &lt;p>而这些并不是完全重要，更加重要的问题是， 带着这些问题，我们来审视一下学生会退会。 既然如何， 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 我们不得不面对一个非常尴尬的事实，那就是， 可是，即使是这样，学生会退会的出现仍然代表了一定的意义。 学生会退会，发生了会如何，不发生又会如何。 经过上述讨论， 生活中，若学生会退会出现了，我们就不得不考虑它出现了的事实。 学生会退会，到底应该如何实现。 这样看来， 在这种困难的抉择下，本人思来想去，寝食难安。 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 就我个人来说，学生会退会对我的意义，不能不说非常重大。 莎士比亚曾经提到过，人的一生是短的，但如果卑劣地过这一生，就太长了。这似乎解答了我的疑惑。 莫扎特说过一句富有哲理的话，谁和我一样用功，谁就会和我一样成功。这启发了我， 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 学生会退会，到底应该如何实现。 一般来说， 从这个角度来看， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 在这种困难的抉择下，本人思来想去，寝食难安。 了解清楚学生会退会到底是一种怎么样的存在，是解决一切问题的关键。 一般来说， 生活中，若学生会退会出现了，我们就不得不考虑它出现了的事实。 问题的关键究竟为何？ 而这些并不是完全重要，更加重要的问题是。&lt;/p>
 &lt;p>奥斯特洛夫斯基曾经说过，共同的事业，共同的斗争，可以使人们产生忍受一切的力量。　带着这句话，我们还要更加慎重的审视这个问题： 一般来讲，我们都必须务必慎重的考虑考虑。 既然如此， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 带着这些问题，我们来审视一下学生会退会。 我认为， 我认为， 在这种困难的抉择下，本人思来想去，寝食难安。 问题的关键究竟为何？ 每个人都不得不面对这些问题。 在面对这种问题时， 要想清楚，学生会退会，到底是一种怎么样的存在。 我认为， 既然如此， 每个人都不得不面对这些问题。 在面对这种问题时， 那么， 我认为， 学生会退会因何而发生。&lt;/p>
 &lt;h2 id="引用">引用&lt;/h2>
@@ -11,38 +238,38 @@
 >最暖的憂傷 - 田馥甄&lt;/a>&lt;/em>&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="图片">图片&lt;/h2>
-&lt;p>&lt;img src="https://mackenia.xyz/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg"
+&lt;p>&lt;img src="https://mackenia.github.io/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg"
 width="667"
 height="1000"
-srcset="https://mackenia.xyz/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu595aaf3b3dbbb41af5aed8d3958cc9f9_13854_480x0_resize_q75_box.jpg 480w, https://mackenia.xyz/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu595aaf3b3dbbb41af5aed8d3958cc9f9_13854_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://mackenia.github.io/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu595aaf3b3dbbb41af5aed8d3958cc9f9_13854_480x0_resize_q75_box.jpg 480w, https://mackenia.github.io/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu595aaf3b3dbbb41af5aed8d3958cc9f9_13854_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 alt="Photo by Florian Klauer on Unsplash"
 class="gallery-image"
 data-flex-grow="66"
 data-flex-basis="160px"
-> &lt;img src="https://mackenia.xyz/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash.jpg"
+> &lt;img src="https://mackenia.github.io/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash.jpg"
 width="1000"
 height="667"
-srcset="https://mackenia.xyz/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu0a3f1163de68d0b9471979ebf0ecf11e_32400_480x0_resize_q75_box.jpg 480w, https://mackenia.xyz/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu0a3f1163de68d0b9471979ebf0ecf11e_32400_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://mackenia.github.io/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu0a3f1163de68d0b9471979ebf0ecf11e_32400_480x0_resize_q75_box.jpg 480w, https://mackenia.github.io/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu0a3f1163de68d0b9471979ebf0ecf11e_32400_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 alt="Photo by Luca Bravo on Unsplash"
 class="gallery-image"
 data-flex-grow="149"
 data-flex-basis="359px"
 >&lt;/p>
-&lt;p>&lt;img src="https://mackenia.xyz/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg"
+&lt;p>&lt;img src="https://mackenia.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg"
 width="1000"
 height="750"
-srcset="https://mackenia.xyz/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu45a5e3ad5e058da6a00650ed8fd40bea_15530_480x0_resize_q75_box.jpg 480w, https://mackenia.xyz/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu45a5e3ad5e058da6a00650ed8fd40bea_15530_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://mackenia.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu45a5e3ad5e058da6a00650ed8fd40bea_15530_480x0_resize_q75_box.jpg 480w, https://mackenia.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu45a5e3ad5e058da6a00650ed8fd40bea_15530_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 alt="Photo by Helena Hertz on Unsplash"
 class="gallery-image"
 data-flex-grow="133"
 data-flex-basis="320px"
-> &lt;img src="https://mackenia.xyz/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg"
+> &lt;img src="https://mackenia.github.io/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg"
 width="667"
 height="1000"
-srcset="https://mackenia.xyz/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hub241c2a9c7a2caf7e16a2a5bbc7141ff_18711_480x0_resize_q75_box.jpg 480w, https://mackenia.xyz/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hub241c2a9c7a2caf7e16a2a5bbc7141ff_18711_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://mackenia.github.io/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hub241c2a9c7a2caf7e16a2a5bbc7141ff_18711_480x0_resize_q75_box.jpg 480w, https://mackenia.github.io/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hub241c2a9c7a2caf7e16a2a5bbc7141ff_18711_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 alt="Photo by Hudai Gayiran on Unsplash"
 class="gallery-image"
@@ -62,7 +289,7 @@ data-flex-basis="160px"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>相册语法来自 &lt;a class="link" href="https://typlog.com/" target="_blank" rel="noopener"
->Typlog&lt;/a>&lt;/p></description></item><item><title>Math Typesetting</title><link>https://mackenia.xyz/p/math-typesetting/</link><pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate><guid>https://mackenia.xyz/p/math-typesetting/</guid><description>&lt;p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p>
+>Typlog&lt;/a>&lt;/p></description></item><item><title>Math Typesetting</title><link>https://mackenia.github.io/p/math-typesetting/</link><pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate><guid>https://mackenia.github.io/p/math-typesetting/</guid><description>&lt;p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p>
 &lt;p>In this example we will be using &lt;a class="link" href="https://katex.org/" target="_blank" rel="noopener"
 >KaTeX&lt;/a>&lt;/p>
 &lt;ul>

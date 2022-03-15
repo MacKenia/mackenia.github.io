@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Test on Mackenia 的小站</title>
-    <link>https://mackenia.xyz/tags/test/</link>
+    <link>https://mackenia.github.io/tags/test/</link>
     <description>Recent content in Test on Mackenia 的小站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 04 Mar 2022 23:05:00 +0800</lastBuildDate><atom:link href="https://mackenia.xyz/tags/test/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Mar 2022 23:05:00 +0800</lastBuildDate><atom:link href="https://mackenia.github.io/tags/test/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>图片API</title>
-      <link>https://mackenia.xyz/p/test/</link>
+      <link>https://mackenia.github.io/p/test/</link>
       <pubDate>Fri, 04 Mar 2022 23:05:00 +0800</pubDate>
       
-      <guid>https://mackenia.xyz/p/test/</guid>
+      <guid>https://mackenia.github.io/p/test/</guid>
       <description>图片接口 CSDN 超级小兔： https://imgapi.xl0408.top/index.php
 小歪： https://api.ixiaowai.cn/api/api.php
 木子博客： https://api.mz-moe.cn/img.php
