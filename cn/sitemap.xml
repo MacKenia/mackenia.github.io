@@ -43,6 +43,58 @@
     <loc>https://mackenia.github.io/categories/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2022-03-15T12:04:52+08:00</lastmod>
   </url><url>
+    <loc>https://mackenia.github.io/tags/api/</loc>
+    <lastmod>2022-03-11T12:49:48+08:00</lastmod>
+  </url><url>
+    <loc>https://mackenia.github.io/tags/python/</loc>
+    <lastmod>2022-03-11T12:49:48+08:00</lastmod>
+  </url><url>
+    <loc>https://mackenia.github.io/p/spider/</loc>
+    <lastmod>2022-03-11T12:49:48+08:00</lastmod>
+  </url><url>
+    <loc>https://mackenia.github.io/tags/</loc>
+    <lastmod>2022-03-11T12:49:48+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://mackenia.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://mackenia.github.io/tags/"
+                />
+  </url><url>
+    <loc>https://mackenia.github.io/p/4-21/</loc>
+    <lastmod>2022-03-07T20:07:00+08:00</lastmod>
+  </url><url>
+    <loc>https://mackenia.github.io/categories/%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2022-03-07T20:07:00+08:00</lastmod>
+  </url><url>
+    <loc>https://mackenia.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
+    <lastmod>2022-03-07T20:07:00+08:00</lastmod>
+  </url><url>
+    <loc>https://mackenia.github.io/tags/%E9%82%BB%E6%8E%A5%E8%A1%A8/</loc>
+    <lastmod>2022-03-07T20:07:00+08:00</lastmod>
+  </url><url>
+    <loc>https://mackenia.github.io/tags/hugo/</loc>
+    <lastmod>2022-03-04T23:05:00+08:00</lastmod>
+  </url><url>
+    <loc>https://mackenia.github.io/tags/stack/</loc>
+    <lastmod>2022-03-04T23:05:00+08:00</lastmod>
+  </url><url>
+    <loc>https://mackenia.github.io/tags/test/</loc>
+    <lastmod>2022-03-04T23:05:00+08:00</lastmod>
+  </url><url>
+    <loc>https://mackenia.github.io/categories/%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2022-03-04T23:05:00+08:00</lastmod>
+  </url><url>
+    <loc>https://mackenia.github.io/p/test/</loc>
+    <lastmod>2022-03-04T23:05:00+08:00</lastmod>
+  </url><url>
+    <loc>https://mackenia.github.io/p/first-post/</loc>
+    <lastmod>2022-03-04T20:41:00+08:00</lastmod>
+  </url><url>
     <loc>https://mackenia.github.io/p/test-chinese/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
   </url><url>
@@ -64,18 +116,6 @@
     <loc>https://mackenia.github.io/links/</loc>
   </url><url>
     <loc>https://mackenia.github.io/search/</loc>
-  </url><url>
-    <loc>https://mackenia.github.io/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://mackenia.github.io/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="cn"
-                href="https://mackenia.github.io/tags/"
-                />
   </url><url>
     <loc>https://mackenia.github.io/%E5%85%B3%E4%BA%8E/</loc>
   </url>
