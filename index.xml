@@ -12,7 +12,7 @@
         <pubDate>Wed, 06 Apr 2022 16:50:33 +0800</pubDate>
         
         <guid>https://mackenia.github.io/p/%E4%BD%BF%E7%94%A8vscode%E5%86%99springboot%E9%A1%B9%E7%9B%AE/</guid>
-        <description>&lt;blockquote&gt;
+        <description>&lt;img src="https://api.yimian.xyz/img" alt="Featured image of post 使用Vscode写springboot项目" /&gt;&lt;blockquote&gt;
 &lt;p&gt;并不推荐大家使用&lt;code&gt;Vscode&lt;/code&gt;写&lt;code&gt;SpringBoot&lt;/code&gt;项目结构复杂，&lt;code&gt;Vscode&lt;/code&gt;的插件管理始终不如&lt;code&gt;IDEA&lt;/code&gt;的软件管理来的方便，如果你想多一种选择或者想尝试手动管理的“快感”的话就请看下去吧&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;确定依赖及环境变量配置正确&#34;&gt;确定依赖及环境变量配置正确&lt;/h2&gt;
